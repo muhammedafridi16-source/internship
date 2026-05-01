@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lipstick Position</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0d1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card (Parent) */
+.card {
+    position: relative;   /* important */
+    width: 300px;
+    background: #161b22;
+    border-radius: 12px;
+    overflow: hidden;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Badge (Absolute) */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff7b72;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Content */
+.content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    background: #c71585;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a0136f;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- Lipstick Image -->
+    <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400" alt="Lipstick">
+
+    <!-- Positioned badge -->
+    <div class="badge">NEW</div>
+
+    <div class="content">
+        <h2>Matte Lipstick</h2>
+        <p>Long-lasting color with smooth finish.</p>
+        <button>Buy Now</button>
+    </div>
+
+</div>
+
+</body>
+</html>
