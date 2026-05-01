@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM</title>
+</head>
+<body>
+
+<h3 id="text">Hello</h3>
+
+<button onclick="changeText()">Change Text</button>
+<button onclick="changeStyle()">Change Style</button>
+<button onclick="addElement()">Add Element</button>
+<button onclick="removeElement()">Remove Element</button>
+
+<div id="box"></div>
+
+<script>
+function changeText() {
+    document.getElementById("text").innerText = "Beautiful ";
+}
+
+function changeStyle() {
+    let t = document.getElementById("text");
+    t.style.color = "green";
+}
+
+function addElement() {
+    let p = document.createElement("p");
+    p.innerText = "New Element";
+    document.getElementById("box").appendChild(p);
+}
+
+function removeElement() {
+    let b = document.getElementById("box");
+    if (b.lastChild) {
+        b.removeChild(b.lastChild);
+    }
+}
+</script>
+
+</body>
+</html>
