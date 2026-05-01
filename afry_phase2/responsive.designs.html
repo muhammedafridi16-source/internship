@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Mobile</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0d1117;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    background: #161b22;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #58a6ff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+/* Image */
+.container img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Text */
+.text {
+    max-width: 400px;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    background: #238636;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2ea043;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+    <!-- Mobile Image -->
+    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="Mobile Phone">
+
+    <div class="text">
+        <h2>Smart Phone</h2>
+        <p>Latest mobile with powerful performance, great camera, and long battery life.</p>
+        <button>Buy Now</button>
+    </div>
+
+</div>
+
+</body>
+</html>
